@@ -90,7 +90,7 @@ GRADLE_GLOBAL_ARGS: ((gradle-global-args))
 - {{test.name}}Test{{java_test_version.name}}
   {%- endfor -%}
   {%- endfor -%}
-  {-% for run_var in (benchmarks.flavors) %}
+  {%- for run_var in (benchmarks.flavors) %}
 - Benchmark{{ run_var.title }}
   {%- endfor -%}
 {% endmacro %}
